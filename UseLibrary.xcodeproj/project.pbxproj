@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE398AED1F300FED009400BC /* checkers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE398AEC1F300FED009400BC /* checkers.jpg */; };
+		FE537B381F200A6500849BA8 /* libFlipSnapLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */; };
 		FEE1FEC61F1EE89800A07717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE1FEC51F1EE89800A07717 /* AppDelegate.m */; };
 		FEE1FEC91F1EE89800A07717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE1FEC81F1EE89800A07717 /* ViewController.m */; };
 		FEE1FECC1F1EE89800A07717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE1FECA1F1EE89800A07717 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE398AEC1F300FED009400BC /* checkers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkers.jpg; sourceTree = "<group>"; };
+		FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlipSnapLibrary.a; sourceTree = "<group>"; };
+		FECE84E71F461A200051964D /* FSCamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSCamViewController.h; path = /Users/robnewport/Documents/Development/UseLibrary/FSCamViewController.h; sourceTree = "<absolute>"; };
 		FEE1FEC11F1EE89800A07717 /* UseLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE1FEC41F1EE89800A07717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEE1FEC51F1EE89800A07717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE537B381F200A6500849BA8 /* libFlipSnapLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				FEE1FEC31F1EE89800A07717 /* UseLibrary */,
 				FEE1FEC21F1EE89800A07717 /* Products */,
+				FEE1FEE01F1EEA0A00A07717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,16 @@
 				FEE1FED31F1EE89800A07717 /* main.m */,
 			);
 			path = UseLibrary;
+			sourceTree = "<group>";
+		};
+		FEE1FEE01F1EEA0A00A07717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */,
+				FECE84E71F461A200051964D /* FSCamViewController.h */,
+				FE398AEC1F300FED009400BC /* checkers.jpg */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = Weburban;
+				ORGANIZATIONNAME = FlipSnap;
 				TargetAttributes = {
 					FEE1FEC01F1EE89800A07717 = {
 						CreatedOnToolsVersion = 9.0;
@@ -131,6 +148,7 @@
 				FEE1FED11F1EE89800A07717 /* LaunchScreen.storyboard in Resources */,
 				FEE1FECE1F1EE89800A07717 /* Assets.xcassets in Resources */,
 				FEE1FECC1F1EE89800A07717 /* Main.storyboard in Resources */,
+				FE398AED1F300FED009400BC /* checkers.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,12 +295,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DLHRQQHC32;
+				DEVELOPMENT_TEAM = V73Y8HLAZZ;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = UseLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weburban.UseLibrary;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whisteo.flipsnapme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,12 +315,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DLHRQQHC32;
+				DEVELOPMENT_TEAM = V73Y8HLAZZ;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = UseLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weburban.UseLibrary;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whisteo.flipsnapme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -318,6 +350,7 @@
 				FEE1FED91F1EE89800A07717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
