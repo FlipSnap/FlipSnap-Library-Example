@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE398AED1F300FED009400BC /* checkers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE398AEC1F300FED009400BC /* checkers.jpg */; };
 		FE537B381F200A6500849BA8 /* libFlipSnapLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */; };
 		FEE1FEC61F1EE89800A07717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE1FEC51F1EE89800A07717 /* AppDelegate.m */; };
 		FEE1FEC91F1EE89800A07717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE1FEC81F1EE89800A07717 /* ViewController.m */; };
@@ -20,7 +19,7 @@
 /* Begin PBXFileReference section */
 		FE398AEC1F300FED009400BC /* checkers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkers.jpg; sourceTree = "<group>"; };
 		FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlipSnapLibrary.a; sourceTree = "<group>"; };
-		FECE84E71F461A200051964D /* FSCamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSCamViewController.h; path = /Users/robnewport/Documents/Development/UseLibrary/FSCamViewController.h; sourceTree = "<absolute>"; };
+		FECE84E71F461A200051964D /* FSCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCamViewController.h; path = /Users/robnewport/Documents/Development/UseLibrary/FSCamViewController.h; sourceTree = "<absolute>"; };
 		FEE1FEC11F1EE89800A07717 /* UseLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE1FEC41F1EE89800A07717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEE1FEC51F1EE89800A07717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,8 +80,8 @@
 		FEE1FEE01F1EEA0A00A07717 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */,
 				FECE84E71F461A200051964D /* FSCamViewController.h */,
+				FE537B351F2009D700849BA8 /* libFlipSnapLibrary.a */,
 				FE398AEC1F300FED009400BC /* checkers.jpg */,
 			);
 			name = Frameworks;
@@ -148,7 +147,6 @@
 				FEE1FED11F1EE89800A07717 /* LaunchScreen.storyboard in Resources */,
 				FEE1FECE1F1EE89800A07717 /* Assets.xcassets in Resources */,
 				FEE1FECC1F1EE89800A07717 /* Main.storyboard in Resources */,
-				FE398AED1F300FED009400BC /* checkers.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

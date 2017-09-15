@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-//@property(nonatomic, strong) FSViewController *fsViewController;
+
 @end
 
 @implementation AppDelegate
